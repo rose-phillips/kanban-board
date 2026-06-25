@@ -1,13 +1,19 @@
-export type Status = "Open" | "In progress" | "Done"
+export const Status = {
+  Open: "Open",
+  InProgress: "In progress",
+  Done: "Done"
+} as const;
+
+export type StatusType = typeof Status[keyof typeof Status]; 
 
 export interface ItemTypes {
   id: string,
   name: string,
-  status: Status,
+  status: StatusType,
   selected: boolean
 }
 
 export interface ListTypes {
-listTitle: Status,
+listTitle: StatusType,
 listItems?: ItemTypes[]
 }

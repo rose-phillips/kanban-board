@@ -24,14 +24,43 @@ h1 {
 }
 
 .list-container {
-  border: 1px solid lightgrey;
   background-color: white;
   width: 33%;
   min-height: 100%;
+  border-radius: 10px;
 }
 
 .list-title {
   padding: 20px;
   margin: 0;
   background-color: lightgrey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-container,
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  gap: 5px;
+}
+input,
+select {
+  margin-bottom: 20px;
+}
+.form-button {
+  margin-top: 10px;
+  padding: 10px 7px;
+  border: none;
 }
