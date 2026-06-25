@@ -1,0 +1,74 @@
+{
+    "issues": [
+        {
+            "id": "1",
+            "title": "AUTH-001: Build Login Form UI",
+            "description": "Create a responsive login form with email and password fields. Include validation states, error messages, and loading indicator on submit.",
+            "status": "done",
+            "selected": false
+        },
+        {
+            "id": "2",
+            "title": "AUTH-002: Implement Login API Integration",
+            "description": "Connect login form to authentication API. Handle success, error responses, and store user session token in localStorage.",
+            "status": "open",
+            "selected": false
+        },
+        {
+            "id": "3",
+            "title": "AUTH-003: Add Client-side Validation for Login",
+            "description": "Validate email format and ensure password field is not empty before allowing submission. Display inline validation messages.",
+            "status": "in-progress",
+            "selected": false
+        },
+        {
+            "id": "4",
+            "title": "AUTH-004: Create Signup Page UI",
+            "description": "Design and build signup form with fields for name, email, password, and confirm password. Ensure responsive layout and accessibility.",
+            "status": "done",
+            "selected": false
+        },
+        {
+            "id": "5",
+            "title": "AUTH-005: Implement Password Strength Indicator",
+            "description": "Display visual feedback for password strength based on length, special characters, and complexity rules.",
+            "status": "in-progress",
+            "selected": false
+        },
+        {
+            "id": "6",
+            "title": "AUTH-006: Add Remember Me Functionality",
+            "description": "Add a 'Remember Me' checkbox to login form and persist session accordingly using localStorage or cookies.",
+            "status": "open",
+            "selected": false
+        },
+        {
+            "id": "7",
+            "title": "AUTH-007: Handle Authentication Errors",
+            "description": "Display user-friendly error messages for incorrect credentials, locked accounts, and server errors.",
+            "status": "open",
+            "selected": false
+        },
+        {
+            "id": "8",
+            "title": "AUTH-008: Implement Logout Flow",
+            "description": "Create logout functionality that clears session data and redirects user to login page.",
+            "status": "done",
+            "selected": false
+        },
+        {
+            "id": "9",
+            "title": "AUTH-009: Protect Routes with Auth Guard",
+            "description": "Restrict access to protected routes based on authentication status. Redirect unauthenticated users to login.",
+            "status": "in-progress",
+            "selected": false
+        },
+        {
+            "id": "10",
+            "title": "AUTH-010: Persist User Session on Refresh",
+            "description": "Ensure user remains logged in after page refresh using stored auth token.",
+            "status": "open",
+            "selected": false
+        }
+    ]
+}
