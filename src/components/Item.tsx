@@ -5,7 +5,9 @@ interface ItemProps {
 }
 
 export const Item = ({item}: ItemProps) => {
+
+  const itemClass = item.status.toLowerCase().split(" ")[0]
   return (
-    <div className="item">{item.name}</div>
+    <div className={`item-${itemClass}`}>{item.name}</div>
   )
 }

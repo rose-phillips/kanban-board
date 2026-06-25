@@ -13,6 +13,9 @@ h1 {
   font-family: "Gloria Hallelujah", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .board {
@@ -65,9 +68,22 @@ select {
   border: none;
 }
 
-.item {
+.item-done,
+.item-open,
+.item-in {
   margin: 20px;
   padding: 5px;
-  background-color: rgb(200, 233, 244);
   border-radius: 5px;
+}
+
+.item-open {
+  background-color: lightgoldenrodyellow
+}
+
+.item-in {
+  background-color: rgb(233, 253, 233)
+}
+
+.item-done {
+  background-color: rgb(200, 233, 244);
 }
