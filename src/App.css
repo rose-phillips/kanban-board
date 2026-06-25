@@ -64,3 +64,10 @@ select {
   padding: 10px 7px;
   border: none;
 }
+
+.item {
+  margin: 20px;
+  padding: 5px;
+  background-color: rgb(200, 233, 244);
+  border-radius: 5px;
+}

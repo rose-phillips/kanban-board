@@ -6,6 +6,6 @@ interface ItemProps {
 
 export const Item = ({item}: ItemProps) => {
   return (
-    <div>{item.name}</div>
+    <div className="item">{item.name}</div>
   )
 }
