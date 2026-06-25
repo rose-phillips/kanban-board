@@ -22,9 +22,9 @@ const HandleSubmit = (data: FormData) => {
     <div className="form-container">
       <h2>Add item</h2>
       <form action={HandleSubmit}>
-        <label htmlFor="name">Title:</label>
+        <label htmlFor="name">Task name:</label>
         <input type="text" id="name" name="name" required/>
-        <label htmlFor="status">Status:</label>
+        <label htmlFor="status">Task status:</label>
         <select name="status" id="status" title="status">
           {Object.values(Status).map((value) => (
             <option key={value}>{value}</option>
