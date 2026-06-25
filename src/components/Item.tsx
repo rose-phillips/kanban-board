@@ -1,5 +1,11 @@
-export const Item = () => {
+import type { ItemTypes } from "../types"
+
+interface ItemProps {
+  item: ItemTypes; 
+}
+
+export const Item = ({item}: ItemProps) => {
   return (
-    <div>Item</div>
+    <div>{item.name}</div>
   )
 }
