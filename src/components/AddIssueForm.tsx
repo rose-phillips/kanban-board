@@ -8,7 +8,7 @@ export const AddIssueForm = () => {
 
   const dispatch = useDispatch();
 
-  const HandleSubmit = async (data: FormData) => {
+  const HandleSubmit = (data: FormData) => {
     const name = data.get("name") as string;
     const status = data.get("status") as StatusType;
     const newItem = {

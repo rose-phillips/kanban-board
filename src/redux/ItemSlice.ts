@@ -11,8 +11,13 @@ const itemSlice = createSlice({
     setItems: (state, action: { payload: ItemTypes[] }) => {
       state.items = action.payload;
     },
+    setStatus: (state, action: {payload: ItemTypes}) => {
+     const { id, status } = action.payload;
+      const item = state.items.find(item => item.id === id);
+      item!.status = status
+    }
   },
 });
 
-export const { addItem, setItems } = itemSlice.actions;
+export const { addItem, setItems, setStatus } = itemSlice.actions;
 export default itemSlice.reducer;
